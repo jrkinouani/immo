@@ -1,5 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-default
+{
+    background-color: #2C3E50;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    height: 80px;
+    padding-top: 15px;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
+    color: white;
+    font-size: 2em;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
