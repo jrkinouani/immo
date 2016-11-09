@@ -3,7 +3,7 @@
 
 .navbar-default
 {
-    background-color: #2C3E50;
+    background-color: transparent;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
     height: 80px;
@@ -28,6 +28,62 @@
     background-color: transparent;
 
 }
+/*page cover*/
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    /*background: #000;*/
+      background-color: rgba(53,59,66,.3);
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    /*background: rgba(0, 0, 0, 0.4);*/
+
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.hero__content.container-fluid.text-center
+{
+  margin-top: 300px;
+}
+h3.padding-standard
+{
+  font-size: 45px;
+  font-weight: bold;
+  color: white !important;
+}
+/*end */
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
