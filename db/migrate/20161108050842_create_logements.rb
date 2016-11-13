@@ -20,6 +20,7 @@ class CreateLogements < ActiveRecord::Migration[5.0]
       t.string :image5
       t.string :image6
 
+
       t.timestamps
     end
   end
