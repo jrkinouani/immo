@@ -29,9 +29,6 @@ ActiveRecord::Schema.define(version: 20161109065411) do
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
-=======
-ActiveRecord::Schema.define(version: 20161108050842) do
->>>>>>> df1f48e3080fb8ec2148445642cd38edb5cec853
 
   create_table "logements", force: :cascade do |t|
     t.text     "name"
