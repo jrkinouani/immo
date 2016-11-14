@@ -34,7 +34,7 @@ gem 'rails_admin', '~> 1.0'
 gem 'bootstrap-sass', '3.3.6'
 gem 'devise'
 
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'fog', require: 'fog/aws'
 gem 'rmagick', require: 'RMagick'
 
