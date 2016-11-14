@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
- ruby '2.3.1'
+ ruby '2.3.1' 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -34,8 +34,8 @@ gem 'rails_admin', '~> 1.0'
 gem 'bootstrap-sass', '3.3.6'
 gem 'devise'
 
-  gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
-gem 'fog', require:'fog-aws'
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem 'fog', require: 'fog/aws'
 gem 'rmagick', require: 'RMagick'
 
 
