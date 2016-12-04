@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
    get  "/apropos" => 'static_pages#apropos'
 
-  get "/videos/we-work-we-wait.mp4", :to => redirect(‘/videos/we-work-we-wait.mp4’)
+  get "/videos/we-work-we-wait.mp4", :to => redirect("/videos/we-work-we-wait.mp4")
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
