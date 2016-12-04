@@ -1,11 +1,10 @@
 <div class="homepage-hero-module">
     <div class="video-container">
         <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
+        <div autoplay loop class="fillWidth">
+          <%= video_tag ("we-work-we-wait.mp4"), :autoplay => true, :loop => true %>
 
-            <source src="/MP4/we-work-we-wait.mp4" type="video/mp4"/>Your browser does not support the video tag. I suggest you upgrade your browser.
-
-        </video>
+        </div>
 
 
         <div class="hero__content container-fluid text-center">
@@ -35,7 +34,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                      
+
                          <img src="<%= logement.image1.url %>" alt="" class="img-responsive">
                     </a>
                 </div>
