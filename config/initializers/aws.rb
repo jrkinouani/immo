@@ -1,5 +1,3 @@
-if Rails.env == 'development'
-
   CarrierWave.configure do |config|
 
     config.fog_credentials = {
@@ -20,6 +18,3 @@ if Rails.env == 'development'
   ##########################################
     require 'excon'
   Excon.ssl_verify_peer = false
-
-
-end
