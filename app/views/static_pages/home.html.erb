@@ -1,30 +1,13 @@
-<div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
-
-            <source src="/we-work-we-wait.mp4" type="video/mp4"/>Your browser does not support the video tag. I suggest you upgrade your browser.
-
-        </video>
-
-
-        <div class="hero__content container-fluid text-center">
-
-        <div class="hero__subtitle" data-sr-id="2" style=";color:white; font-size:45px; visibility: visible;  -webkit-transform: translateY(0) scale(1); transform: translateY(0) scale(1); ">
-          <h3 class="padding-standard">
-          Vous allez être bien chez vous         </h3>
-        </div>
-
-        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-
+<aside>
+      <div class="row">
+        <div class="text-center"><h1 class="baseline">Vous allez être bien <br> chez vous  </h1> </div>
       </div>
-    </div>
-</div>
-
+</aside>
 
 <section id="portfolio">
+  <div class="row">
+      <div class="text-center"><h1 class="titre">Nos logements</h1></div>
+  </div>
         <div class="container">
             <div class="row">
                <% @logements.each do |logement| %>
@@ -37,6 +20,7 @@
                         </div>
 
                          <img src="<%= logement.image1.url %>" alt="" class="img-responsive">
+
                     </a>
                 </div>
               <% end %>

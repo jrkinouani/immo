@@ -3,14 +3,17 @@
 
 .navbar-default
 {
-    background-color: transparent;
+    background-color:white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-
-    height: 80px;
-    padding-top: 15px;
-    border-color: transparent;
+    height: 90px;
+    border-color: black;
 }
-
+.navbar-right
+{
+    float: right !important;
+    margin-right: -15px;
+    margin-top: 15px;
+}
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
     color: white;
     font-size: 2em;
@@ -18,71 +21,49 @@
 }
 .navbar-default .navbar-nav > li > a
 {
-    color: white;
+    color: black;
     font-size: 18px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:  bold;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 {
-    color: white;
+    color: red;
     background-color: transparent;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    
+}
+.li.page-scroll
+{
+  margin-top: 15px;
+}
 
-}
-/*page cover*/
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
 
-}
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
 
+aside
+{
+  text-align: center;
+   background-image: url(/belle_maison.jpg);
+   height: 650px;
+   background-size: cover;
+   background-repeat:no-repeat;
+   color: white;
 }
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
-.hero__content.container-fluid.text-center
+h1.baseline
 {
   margin-top: 300px;
-}
-h3.padding-standard
-{
-  font-size: 45px;
   font-weight: bold;
-  color: white !important;
+  font-size: 50px;
+}
+.row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h1.titre
+{
+  color:red;
 }
 /*end */
 .card {
@@ -90,6 +71,26 @@ h3.padding-standard
     width: 100%;
     height: 320px;
     overflow: hidden;
+}
+/*page apropos*/
+#maps
+{
+    margin-top:110px;
+    margin-bottom: 20px;
+}
+h4.contact
+{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+img#logo
+{
+   height: 80px;
+   margin-top: -15px;
+}
+footer.text-center
+{
+   margin-bottom: 20px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
