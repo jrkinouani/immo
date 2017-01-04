@@ -4,10 +4,55 @@
       </div>
 </aside>
 
+
 <section id="portfolio">
   <div class="row">
-      <div class="text-center"><h1 class="titre">Nos logements</h1></div>
+      <div class="text-center"><h1 class="titre">Nos locations</h1></div>
   </div>
+  <div class="container">
+    <div class="row" id="card_location">
+      <div class="col-md-4">
+        <a href="/apropos.html" class="service-link">
+      <div class="card card--shaded full-background-image display-table space-md-2 space-lg-4" style="background-image:url('//cdn2.starofservice.com/static/images/home/bg-lessons.jpg')">
+          <div class="display-middle">
+            <div class="card-image-block">
+              <h3 class="title_loc">Location à long terme</h3>
+            </div>
+            <h6 class="card-title text-white space-3 space-top-2">Cours</h6>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="/apropos.html" class="service-link">
+         <div class="card card--shaded full-background-image display-table space-md-2 space-lg-4" style="background-image:url('//cdn2.starofservice.com/static/images/home/bg-lessons.jpg')">
+          <div class="display-middle">
+            <div class="card-image-block">
+              <h3 class="title_loc">Location saisonnière</h3>
+            </div>
+            <h6 class="card-title text-white space-3 space-top-2">Cours</h6>
+          </div>
+        </div>
+       </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="/apropos.html" class="service-link">
+          <div class="card card--shaded full-background-image display-table space-md-2 space-lg-4" style="background-image:url(/belle_maison.jpg)">
+              <div class="display-middle">
+                <div class="card-image-block">
+                  <h3 class="title_loc">Location en Afrique du Sud</h3>
+                </div>
+                <h6 class="card-title text-white space-3 space-top-2">Cours</h6>
+              </div>
+            </div>
+         </a>
+      </div>
+    </div>
+  </div>
+
+
         <div class="container">
             <div class="row">
                <% @logements.each do |logement| %>
@@ -15,12 +60,9 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                              
                             </div>
                         </div>
-
                          <img src="<%= logement.image1.url %>" alt="" class="img-responsive">
-
                     </a>
                 </div>
               <% end %>
