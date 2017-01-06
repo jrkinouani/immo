@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @logements = Logement.all
+    
   end
 
   def apropos
@@ -8,5 +8,14 @@ class StaticPagesController < ApplicationController
 
   def galerie
       @logement = Logement.find(params[:id])
+  end
+  def saisonniere
+
+  end
+  def reunion
+
+  end
+  def capetown
+  @logements = Logement.all
   end
 end
