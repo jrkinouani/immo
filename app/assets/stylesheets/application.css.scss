@@ -7,7 +7,7 @@
     background-color:white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     height: 90px;
-    border-color: black;
+    border-color: white;
 }
 .navbar-right
 {
@@ -31,6 +31,7 @@
 {
     color: red;
     background-color: transparent;
+
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
@@ -46,9 +47,13 @@ h3.title_loc
   margin-top: 130px;
   text-align: center;
   font-size: 30px;
-  text-decoration: none;
-}
 
+}
+a:hover, a:focus
+ {
+    color: red;
+    text-decoration:none;
+}
 aside
 {
   text-align: center;
@@ -113,6 +118,16 @@ i.fa.fa-volume-control-phone
 footer.text-center
 {
    margin-bottom: 20px;
+}
+/*page capetown */
+h1.title_afs
+{
+  margin-top: 150px;
+}
+.img-responsive
+{
+  height: 400px;
+  width: 700px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

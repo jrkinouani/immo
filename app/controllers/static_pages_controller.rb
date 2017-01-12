@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    
+
   end
 
   def apropos
@@ -13,9 +13,9 @@ class StaticPagesController < ApplicationController
 
   end
   def reunion
-
+    @logements = Logement.all
   end
   def capetown
-  @logements = Logement.all
+  
   end
 end
