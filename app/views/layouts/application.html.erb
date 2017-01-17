@@ -4,35 +4,59 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="">
-   <meta name="author" content="">
     <title>Crearun - loisir et créativité pour tous </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <!-- Custom CSS -->
 
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track'=> true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags%>
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
+           <%= link_to image_tag("/logo_clean.png", :id =>"logo"), root_path, :class => "navbar-brand" %>
+        </div>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll">
+              <i class="fa fa-volume-control-phone" aria-hidden="true">  02 62 02 43 31</i>
+            </li>
+            <li class="page-scroll">
+                <%= link_to "Notre agence" , apropos_path, :class => "#" %>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
        <div class="container">
-           <!-- Brand and toggle get grouped for better mobile display -->
+
            <div class="navbar-header page-scroll">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                </button>
 
-                 <%= link_to image_tag("/logo_clean.png", :id =>"logo"), root_path, :class => "navbar-brand" %>
+                 <%= link_to image_tag("/logo_immo_00.png", :id =>"logo"), root_path, :class => "navbar-brand" %>
            </div>
 
-           <!-- Collect the nav links, forms, and other content for toggling -->
+
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
                    <li class="hidden">
@@ -47,14 +71,33 @@
 
                </ul>
            </div>
-           <!-- /.navbar-collapse -->
+
        </div>
-       <!-- /.container-fluid -->
-   </nav>
+
+   </nav>-->
 
 
     <%= yield %>
-    <footer class="text-center">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="footer-col col-md-4">
+                <h3><em>CREA RUN</em></h3>
+                <p class="text_footer">Loisir et créativité pour tous</p>
+            </div>
+            <div class="footer-col col-md-4">
+                <h3><em>Contact</em></h3>
+                <p class="text_footer">30 rue du presbytère <br>97410 Saint-pierre<br> </p>
+            </div>
+            <div class="footer-col col-md-4">
+                <h3><em>Copyright</em> </h3>
+                <p class="text_footer"> © CREA RUN 2016</p>
+            </div>
+        </div>
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+    <!--<footer class="text-center">
                <div class="footer-above">
                    <div class="container">
                        <div class="row">
@@ -82,12 +125,16 @@
                        </div>
                    </div>
                </div>
-       </footer>
+       </footer>-->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+    " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js"></script>
+     <script src="js/scrolling-nav.js"></script>
+    <!-- Theme JavaScript -->
 
 
   </body>

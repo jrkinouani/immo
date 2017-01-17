@@ -1,15 +1,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-
+nav.navbar.navbar-default
+{
+  height: 80px;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
 .navbar-default
 {
     background-color:white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    height: 90px;
+    height: 60px;
     border-color: black;
 }
-.navbar-right
+/*.navbar-right
 {
     float: right !important;
     margin-right: -15px;
@@ -19,7 +28,7 @@
     color: white;
     font-size: 2em;
     font-weight:  bold;
-}
+}*/
 .navbar-default .navbar-nav > li > a
 {
     color: black;
@@ -33,9 +42,11 @@
     background-color: transparent;
 
 }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse
+{
     border-color: transparent;
-
+    padding-top:15px;
+    background: white;
 }
 .li.page-scroll
 {
@@ -105,6 +116,7 @@ i.fa.fa-volume-control-phone
    padding-top: 15px;
    font-size: 20px;
    font-weight: bold;
+   padding-left: 15px;
 }
 #card_location
 {
@@ -138,6 +150,11 @@ h1.title_afs
 .footer-above
 {
   margin-top: 100px;
+}
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: red;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
