@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
 nav.navbar.navbar-default
 {
   height: 80px;
@@ -76,7 +77,7 @@ aside
 }
 h1.baseline
 {
-  margin-top: 300px;
+  margin-top: 200px;
   font-weight: bold;
   font-size: 50px;
 }
@@ -88,6 +89,40 @@ h1.titre
 {
   color:red;
 }
+/*form search*/
+.search-discover__input-location
+{
+    flex: 1;
+    height: auto;
+    min-width: 100px;
+    padding: 16px;
+    color: #555;
+    background-color: #FFF;
+    vertical-align: middle;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.search-discover__inner
+{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+.search-discover--hero .search-discover__inner
+{
+    max-width: 600px;
+}
+.search-discover__submit {
+    padding: 7px 50px;
+}
+button.btn.btn--success.search-discover__submit
+{
+  background: red;
+}
 /*end */
 .card {
     position: relative;
@@ -95,6 +130,17 @@ h1.titre
     height: 320px;
     overflow: hidden;
 }
+.flexbox.row-flex.centered
+{
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+#galerie
+{
+    background-image: url(belle_maison.jpg);
+}
+
 /*page apropos*/
 #maps
 {
@@ -154,7 +200,50 @@ h1.title_afs
 .footer {
     padding-right: 15px;
     padding-left: 15px;
+    background: #eee;
+}
+.text-muted {
+    color: #777777;
+    text-align: center;
+}
+.img-responsive.img {
+    height: 300px;
+    width: 700px;
+}
+button.btn.btn--blue {
     background: red;
+    color: #fff;
+}
+button.btn.btn--blue a:hover
+{
+  background: black;
+}
+.col-md-4.col-sm-6.portfolio-item
+{
+  margin-bottom: 15px;
+}
+#portfolio
+{
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.content_button
+{
+  margin-top:100px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
