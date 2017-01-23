@@ -201,6 +201,8 @@ h1.title_afs
     padding-right: 15px;
     padding-left: 15px;
     background: #eee;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 .text-muted {
     color: #777777;
@@ -244,6 +246,18 @@ button.btn.btn--blue a:hover
 .content_button
 {
   margin-top:100px;
+}
+.section-heading
+{
+  margin-bottom: 40px;
+}
+.text-muted
+{
+  margin-top: 20px;
+}
+body.town
+{
+  background:#ececec;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
