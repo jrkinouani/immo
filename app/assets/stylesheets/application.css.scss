@@ -17,7 +17,6 @@ nav.navbar.navbar-default
     background-color:white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     height: 60px;
-    border-color: black;
 }
 /*.navbar-right
 {
@@ -35,7 +34,6 @@ nav.navbar.navbar-default
     color: black;
     font-size: 18px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight:  bold;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 {
@@ -104,6 +102,10 @@ h1.titre
     border-radius: 2px;
     margin-right: 10px;
 }
+.search-discover.js-form-search-location.search-discover--hero
+{
+  margin-top: 30px;
+}
 .search-discover__inner
 {
     display: flex;
@@ -144,7 +146,7 @@ button.btn.btn--success.search-discover__submit
 /*page apropos*/
 #maps
 {
-    margin-top:110px;
+    padding-top:50px;
     margin-bottom: 20px;
 }
 h4.contact
@@ -161,7 +163,7 @@ i.fa.fa-volume-control-phone
 {
    padding-top: 15px;
    font-size: 20px;
-   font-weight: bold;
+
    padding-left: 15px;
 }
 #card_location
@@ -181,6 +183,18 @@ footer.text-center
 h1.title_afs
 {
   margin-top: 50px;
+  font-weight: normal;
+}
+h3.pitch_afs
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+    font-size: 18px;
+}
+section#portfolio.bg-light-gray
+{
+  background: #eee;
 }
 .img-responsive
 {
@@ -200,7 +214,6 @@ h1.title_afs
 .footer {
     padding-right: 15px;
     padding-left: 15px;
-    background: #eee;
     padding-top: 25px;
     padding-bottom: 30px;
 }
@@ -227,7 +240,8 @@ button.btn.btn--blue a:hover
 #portfolio
 {
   margin-bottom: 15px;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom:30px;
 }
 .btn-circle {
     width: 70px;
@@ -255,9 +269,15 @@ button.btn.btn--blue a:hover
 {
   margin-top: 20px;
 }
-body.town
+section.town
 {
   background:#ececec;
+}
+button.btn.btn-primary.résa
+{
+  height: 60px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
