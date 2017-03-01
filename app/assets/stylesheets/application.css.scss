@@ -279,6 +279,32 @@ button.btn.btn-primary.résa
   font-size: 18px;
   margin-top: 20px;
 }
+/*page reunion*/
+section.house
+{
+  background:#ececec;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+img.img_home
+{
+  height: 300px;
+  width: 700px;
+}
+.title_reunion
+{
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+#thumbnail_thumbnail
+{
+  height: 430px;
+}
+.thumbnail .caption {
+    padding: 9px;
+    color: #333333;
+    background:white;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
