@@ -192,7 +192,7 @@ h3.pitch_afs
     color: black;
     font-size: 18px;
 }
-article 
+article
 {
   background: #eee;
 }
@@ -306,8 +306,36 @@ img.img_home
     background:white;
 }
 /*Page equipe*/
+h3.text_equipe
+{
+  font-weight: 300;
+}
+h3.title_equipe
+{
+  font-weight: 300;
+}
+/*Page galerie*/
+#galerie
+{
+  background: #eee;
+  padding-bottom: 80px;
 
-
+}
+h3.title_desc_home
+{
+  color: black;
+}
+h3.title_desc
+{
+  color: black;
+  font-weight: 300;
+  margin-right: 30px;
+}
+span.title_surface
+{
+  font-weight: 300;
+  font-size: 24px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
