@@ -16,7 +16,7 @@ class StaticPagesController < ApplicationController
     @logements = Logement.all
   end
   def capetown
-
+    @logements = Logement.all
   end
 
   def equipe
