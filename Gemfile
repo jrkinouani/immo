@@ -17,6 +17,8 @@ gem 'devise'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'fog'
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
+gem 'mail_form'
+gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3', '1.3.11'
