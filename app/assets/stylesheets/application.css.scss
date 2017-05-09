@@ -102,7 +102,22 @@ h4.title_space
 }
 article#article
 {
-  background: #f9f9f9;;
+  background: #f9f9f9;
+}
+article#zone_commerciale
+{
+  background: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+h3.title_com
+{
+  font-weight: 300;
+  font-size: 35px;
+}
+em
+{
+  color: red;
 }
 /*form search*/
 .search-discover__input-location
@@ -199,7 +214,14 @@ footer.text-center
 /*page capetown */
 h1.title_afs
 {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+h3.title_afs
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-weight: normal;
 }
 h3.pitch_afs
@@ -233,6 +255,7 @@ article
     padding-left: 15px;
     padding-top: 25px;
     padding-bottom: 30px;
+    background: red;
 }
 .text-muted {
     color: #777777;
