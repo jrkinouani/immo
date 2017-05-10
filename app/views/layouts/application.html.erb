@@ -40,13 +40,21 @@
             <li class="page-scroll">
               <i class="fa fa-volume-control-phone" aria-hidden="true">  02 62 02 43 31</i>
             </li>
+            <!--<li><%= button_to "Transfert vers l'aéroport", vendre_path,
+              :class => "btn btn-primary navbar-btn", :method => :get %>
+            </li>-->
             <li class="page-scroll">
                 <%= link_to "Notre agence" , apropos_path, :class => "#" %>
             </li>
             <li class="page-scroll">
                 <%= link_to "Notre equipe" , equipe_path, :class => "#" %>
             </li>
-
+            <li><%= button_to "Vendre votre bien", vendre_path,
+              :class => "btn btn-primary navbar-btn", :method => :get %>
+            </li>
+            <li><%= button_to "Vendre votre bien", vendre_path,
+              :class => "btn btn-primary navbar-btn", :method => :get %>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

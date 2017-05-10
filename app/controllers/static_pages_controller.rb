@@ -22,4 +22,9 @@ class StaticPagesController < ApplicationController
   def equipe
 
   end
+  def vendre
+  end
+
+  def gestion
+  end
 end

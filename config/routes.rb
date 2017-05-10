@@ -9,8 +9,11 @@ Rails.application.routes.draw do
    get  "/saisonniere" => 'static_pages#saisonniere'
    get  "/capetown" => 'static_pages#capetown'
    get  "/reunion" => 'static_pages#reunion'
-    get  "/galerie" => 'static_pages#galerie'
-    get "/equipe" => 'static_pages#equipe'
+   get  "/galerie" => 'static_pages#galerie'
+   get "/equipe" => 'static_pages#equipe'
+   get "/vendre" => 'static_pages#vendre'
+   get "/gestion" => "static#gestion"
+
   get "/we-work-we-wait.mp4", :to => redirect("/videos/we-work-we-wait.mp4")
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
