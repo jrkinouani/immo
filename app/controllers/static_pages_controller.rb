@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
-  def home
 
+  def home
   end
 
   def apropos
@@ -20,8 +20,8 @@ class StaticPagesController < ApplicationController
   end
 
   def equipe
-
   end
+
   def vendre
   end
 

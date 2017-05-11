@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
     <title>DomTomImmo - Agence de location,vente de maisons et de voitures </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link href="css/scrolling-nav.css" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> true %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </head>
 
   <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -24,25 +23,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
            <%= link_to image_tag("/logo_clean.png", :id =>"logo"), root_path, :class => "navbar-brand" %>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-          </ul>
-
           <ul class="nav navbar-nav navbar-right">
-            <!--<li class="page-scroll">
-                <%= link_to " Louez une voiture" , equipe_path, :class => "#" %>
-            </li>-->
             <li class="page-scroll">
               <i class="fa fa-volume-control-phone" aria-hidden="true">  02 62 02 43 31</i>
             </li>
-            <!--<li><%= button_to "Transfert vers l'aéroport", vendre_path,
-              :class => "btn btn-primary navbar-btn", :method => :get %>
-            </li>-->
             <li class="page-scroll">
                 <%= link_to "Notre agence" , apropos_path, :class => "#" %>
             </li>
@@ -56,13 +44,11 @@
               :class => "btn btn-primary navbar-btn", :method => :get %>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
 
-
       <%= yield %>
-
 
     <footer class="footer">
       <div class="container">
@@ -80,15 +66,6 @@
       </div>
     </footer>
 
-  <script src="js/jquery.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
-    " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/jquery.easing.min.js"></script>
-     <script src="js/scrolling-nav.js"></script>
-    <!-- Theme JavaScript -->
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
