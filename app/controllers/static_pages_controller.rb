@@ -9,6 +9,10 @@ class StaticPagesController < ApplicationController
   def galerie
       @logement = Logement.find(params[:id])
   end
+
+  def galerie_vente
+      @vente = Vente.find(params[:id])
+  end
   def saisonniere
 
   end
@@ -22,9 +26,11 @@ class StaticPagesController < ApplicationController
   def equipe
   end
 
-  def vendre
+  def achat
+    @ventes = Vente.all
   end
 
   def gestion
+
   end
 end
