@@ -1,2 +1,3 @@
 class LogementController < ApplicationController
+  
 end
