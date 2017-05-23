@@ -5,7 +5,20 @@
           <!--<h4 class="accroche">DomtomImmo est une agence de location immobilière</h4>-->
         </div>
 
-        <form class="search-discover js-form-search-location search-discover--hero" role="form">
+        <%= form_tag(search_path, :method => "get",class:"search-discover js-form-search-location search-discover--hero", role:"form") do %>
+        <div class="search-discover__inner">
+            <%= text_field_tag :search, params[:search], placeholder: "Trouver un logement par ville",  type: "text", class:"search-discover__input-location js-location"%>
+            <!--<button type="submit" class="btn btn--success search-discover__submit" data-ga-category="Home" data-ga-action="Search">
+              <i class="fa fa-search visible-xs"></i>
+              <span class="hidden-xs">Découvrir</span>
+            </button>-->
+            <%= submit_tag "Search" %>
+            
+        </div>
+        <% end %>
+
+
+        <!--<form class="search-discover js-form-search-location search-discover--hero" role="form">
           <div class="search-discover__inner">
               <input type="text" name="location" class="search-discover__input-location js-location" placeholder="Où voulez-vous camper ? (optionnel)" autocomplete="off" data-types="geocode" data-discover-url="/explore/?sw_lat=35.44715995439013&amp;sw_lng=-9.898053493750012&amp;ne_lat=53.6868859146433&amp;ne_lng=17.391985568749988&amp;zoom=5" value="">
                 <button type="submit" class="btn btn--success search-discover__submit" data-ga-category="Home" data-ga-action="Search">
@@ -13,7 +26,7 @@
                   <span class="hidden-xs">Découvrir</span>
                 </button>
           </div>
-       </form>
+       </form>-->
 
        <div class="row">
          <div class="text-center">

@@ -1,4 +1,9 @@
 class Logement < ApplicationRecord
+
+  def self.search(search)
+    where("city LIKE ?", "%#{search}%")
+  
+  end
   validates :desc_home, length: { maximum: 100 }
 
    mount_uploader :image1, ImageUploader
@@ -7,6 +12,8 @@ class Logement < ApplicationRecord
    mount_uploader :image4, ImageUploader
    mount_uploader :image5, ImageUploader
    mount_uploader :image6, ImageUploader
+
+
 
     rails_admin do
 

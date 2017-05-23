@@ -33,4 +33,7 @@ class StaticPagesController < ApplicationController
   def gestion
 
   end
+  def search
+      @logement = Logement.find(params[:id])
+  end
 end
