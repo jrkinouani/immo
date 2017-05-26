@@ -7,10 +7,10 @@
 
        <%= form_tag(search_path, method: "get", class: "search-discover js-form-search-location search-discover--hero", role: "form") do %>
        <div class="search-discover__inner">
-         <%= text_field_tag :search, params[:search], class:"search-discover__input-location js-location" %>
+         <%= text_field_tag :search, params[:search], class:"search-discover__input-location js-location", placeholder: "Dans quel ville cherchez-vous ?" %>
          <button type="submit" class="btn btn--success search-discover__submit" data-ga-category="Home" data-ga-action="Search">
            <i class="fa fa-search visible-xs"></i>
-           <span class="hidden-xs">Découvrir</span>
+           <span class="hidden-xs">Rechercher</span>
          </button>
        </div>
        <% end %>
