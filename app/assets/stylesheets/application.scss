@@ -312,9 +312,7 @@ button.btn.btn--blue a:hover
     font-size: 40px;
     color: #fff;
     background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+
 }
 .content_button
 {
@@ -395,6 +393,17 @@ span.title_surface
 {
   font-weight: 300;
   font-size: 24px;
+}
+input
+ {
+    color:black;
+    height: 45px;
+}
+i.fa.fa-home
+{
+  
+  font-size: 80px;
+  margin-bottom: 300px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

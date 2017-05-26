@@ -23,6 +23,15 @@ class StaticPagesController < ApplicationController
     @logements = Logement.all
   end
 
+  def search
+    @logements = Logement.all
+    if params[:search]
+    @logements = Logement.search(params[:search]).order("created_at DESC")
+    else
+    @logements = Logement.all.order('created_at DESC')
+    end
+  end
+
   def equipe
   end
 

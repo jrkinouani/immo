@@ -14,8 +14,8 @@ Rails.application.routes.draw do
    get "/equipe" => 'static_pages#equipe'
    get "/achat" => 'static_pages#achat'
    get "/gestion" => "static_pages#gestion"
+   get "/search" => "static_pages#search"
 
-   
 
   get "/we-work-we-wait.mp4", :to => redirect("/videos/we-work-we-wait.mp4")
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

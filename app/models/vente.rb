@@ -1,5 +1,5 @@
 class Vente < ApplicationRecord
-  validates :desc_home, length: { maximum: 100 }
+  validates :desc_home, length: { maximum: 200 }
 
    mount_uploader :image1, ImageUploader
    mount_uploader :image2, ImageUploader
