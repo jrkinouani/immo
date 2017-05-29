@@ -1,5 +1,5 @@
 class Logement < ApplicationRecord
-  validates :desc_home, length: { maximum: 100 }
+  validates :desc_home, length: { maximum: 300 }
 
 def self.search(search)
   where("city LIKE ?", "%#{search}%")
@@ -20,7 +20,7 @@ end
         field :price
         field :image1
         field :display
-      end 
+      end
 
 
       edit do
