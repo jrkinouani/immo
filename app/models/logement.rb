@@ -1,6 +1,10 @@
 class Logement < ApplicationRecord
   validates :desc_home, length: { maximum: 300 }
 
+  def self.display
+    Logement.where('locked' => true)
+  end
+
 def self.search(search)
   where("city LIKE ?", "%#{search}%")
 end
