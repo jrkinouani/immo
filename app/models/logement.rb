@@ -1,4 +1,11 @@
 class Logement < ApplicationRecord
+  has_many :reservations, dependent: :destroy
+  has_many :image1 , dependent: :destroy
+  has_many :image2 , dependent: :destroy
+  has_many :image3 , dependent: :destroy
+  has_many :image4 , dependent: :destroy
+  has_many :image5 , dependent: :destroy
+  has_many :image6 , dependent: :destroy
   validates :desc_home, length: { maximum: 300 }
 
   def self.display

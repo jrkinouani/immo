@@ -82,6 +82,6 @@
     <label><h3>Nbr de pièces : </h3></label> <span class="title_surface"><%= @logement.capacity %> <span>
     <h3 class="tel">Contactez nous au : 02 62 02 43 31</h3>
 </div>
-
+ <%= link_to 'Faire une réservation', new_reservation_path(logement_id: @logement.id), class: "btn btn-primary navbar-btn", id: "btn_car_show"%>
 </div>
 </section>

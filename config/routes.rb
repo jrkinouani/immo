@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :admins
 
+  resources :reservations, only: [:index, :show, :new, :create]
+
   root 'static_pages#home'
    get "/apropos" => 'static_pages#apropos'
    get "/saisonniere" => 'static_pages#saisonniere'
