@@ -1,0 +1,11 @@
+<%= form_for([@logement, @logement.reservations.new]) do |f| %>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <label>Fin</label>
+      <%= f.text_field :price,  class: "form-control" %>
+    </div>
+  </div>
+     <%= f.hidden_field :room_id, value: @car.id %> #champs caché pour renseigner l’id du logement et le prix
+     <br>
+     <%= f.submit "Demande de réservation ", class: "btn btn-primary" %>
+<% end %>
