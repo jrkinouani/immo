@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4">
+    <div class="col-md-4 col-md-offset-4" id="content_reservation">
       <%= form_for @reservation do | f |%>
       <div class="form-group">
-          <label>Rentrer un prix</label>
-          <%= f.text_field :price,  class: "form-control" %>
+        <div class="text-center">
+          <h3>Rentrer un prix</h3>
+        </div>
+          <%= f.text_field :price,  class: "form-control", placeholder: "20 €" %>
       </div>
         <div class="form-group">
           <%= f.hidden_field :logement_id, value: @logement.id %>
