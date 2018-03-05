@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :logements, only: [:index, :show]
   resources :reservations, only: [:index, :show, :new, :create]
+  resources :charges
 
   root 'static_pages#home'
    get "/apropos" => 'static_pages#apropos'

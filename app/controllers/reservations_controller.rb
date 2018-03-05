@@ -26,7 +26,6 @@ class ReservationsController < ApplicationController
      logement = @reservation.logement
      if @reservation.save
        flash[:danger] = 'bravo!'
-
      else
        flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
      end
