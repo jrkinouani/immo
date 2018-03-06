@@ -1,7 +1,7 @@
 <div class="container-fluid show">
  <div class="">
   <div class="row">
-    <div class=" col-lg-4 col-md-offset-4 col-md-4 col-xs-12" id="zone_paiement">
+    <div class=" col-lg-4 col-md-offset-4 col-md-4 col-xs-12 text-center" id="zone_charges">
     <%= form_tag charges_path do | f | %>
       <div class="row">
         <% if flash[:error].present? %>
@@ -24,7 +24,6 @@
               data-currency ="eur"
               data-locale="auto">
           </script>
-
     <% end %>
    </div>
  </div>

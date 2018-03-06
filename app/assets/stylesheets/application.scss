@@ -4,7 +4,7 @@
 
 nav.navbar.navbar-default
 {
-  height: 80px;
+    height: 80px;
 }
 .navbar {
     position: relative;
@@ -20,12 +20,12 @@ nav.navbar.navbar-default
 }
 input.btn.btn-primary.navbar-btn
 {
-  height: 50px;
-  margin-top:0px;
-  font-size:18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 30px;
+    height: 50px;
+    margin-top:0px;
+    font-size:18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 30px;
 }
 /*.navbar-right
 {
@@ -58,14 +58,14 @@ input.btn.btn-primary.navbar-btn
 }
 .li.page-scroll
 {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 h3.title_loc
 {
-  color: red;
-  margin-top: 130px;
-  text-align: center;
-  font-size: 30px;
+    color: red;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 30px;
 
 }
 a:hover, a:focus
@@ -75,18 +75,18 @@ a:hover, a:focus
 }
 aside
 {
-  text-align: center;
-   background-image: url(/belle_maison.jpg);
-   height: 650px;
-   background-size: cover;
-   background-repeat:no-repeat;
-   color: white;
+    text-align: center;
+    background-image: url(/belle_maison.jpg);
+    height: 650px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
 }
 h1.baseline
 {
-  margin-top: 200px;
-  font-weight: bold;
-  font-size: 50px;
+    margin-top: 200px;
+    font-weight: bold;
+    font-size: 50px;
 }
 .row {
     margin-left: 15px;
@@ -94,43 +94,43 @@ h1.baseline
 }
 h1.titre
 {
-  color:red;
+    color:red;
 }
 h4.text_who
 {
-  font-weight: 300;
-  font-size: 20px;
+    font-weight: 300;
+    font-size: 20px;
 }
 h4.loc
 {
-  font-weight: 400;
+    font-weight: 400;
 }
 h4.title_space
 {
-  font-weight: 300;
+    font-weight: 300;
 }
 article#article
 {
-  background: #f9f9f9;
+    background: #f9f9f9;
 }
 article#zone_commerciale
 {
-  background: white;
-  margin-top: 100px;
-  margin-bottom: 100px;
+    background: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 h3.title_com
 {
-  font-weight: 300;
-  font-size: 35px;
+    font-weight: 300;
+    font-size: 35px;
 }
 em
 {
-  color: white;
+    color: white;
 }
 em.text_em
 {
-  color: red;
+    color: red;
 }
 /*form search*/
 .search-discover__input-location
@@ -149,7 +149,7 @@ em.text_em
 }
 .search-discover.js-form-search-location.search-discover--hero
 {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 .search-discover__inner
 {
@@ -168,7 +168,7 @@ em.text_em
 }
 button.btn.btn--success.search-discover__submit
 {
-  background: red;
+    background: red;
 }
 /*end */
 .card {
@@ -191,7 +191,7 @@ button.btn.btn--success.search-discover__submit
 /*page apropos*/
 .container.about
 {
-  background-image: url(belle_maison.jpg);
+    background-image: url(belle_maison.jpg);
 }
 #maps
 {
@@ -200,72 +200,71 @@ button.btn.btn--success.search-discover__submit
 }
 h4.contact
 {
-  margin-left: 15px;
-  margin-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 img#logo
 {
-   height: 80px;
-   margin-top: -15px;
+     height: 80px;
+     margin-top: -15px;
 }
 i.fa.fa-volume-control-phone
 {
-   padding-top: 15px;
-   font-size: 20px;
+    padding-top: 15px;
+    font-size: 20px;
 
-   padding-left: 15px;
+    padding-left: 15px;
 }
 #card_location
 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .card.card--shaded.full-background-image.display-table.space-md-2.space-lg-4
 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 footer.text-center
 {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 /*page capetown */
 h1.title_afs
 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 h3.title_afs
 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 h3.pitch_afs
 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: black;
     font-size: 18px;
 }
 article
 {
-  background: #eee;
+    background: #eee;
 }
 .img-responsive
 {
-  height: 400px;
-  width: 700px;
+    height: 400px;
+    width: 700px;
 }
 .col-lg-4.col-md-4.col-xs-6.thumb
 {
-
-  margin-top: 50px;
-  margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 .footer-above
 {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 .footer {
     padding-right: 15px;
@@ -276,8 +275,8 @@ article
 }
 p.text_footer
 {
-  font-size: 20px;
-  color: white;
+    font-size: 20px;
+    color: white;
 }
 .text-muted {
     color: white;
@@ -293,18 +292,18 @@ button.btn.btn--blue {
 }
 button.btn.btn--blue a:hover
 {
-  background: black;
+    background: black;
 }
 .col-md-4.col-sm-6.portfolio-item
 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 
 }
 #portfolio
 {
-  margin-bottom: 15px;
-  padding-top: 30px;
-  padding-bottom:30px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom:30px;
 }
 .btn-circle {
     width: 70px;
@@ -320,47 +319,47 @@ button.btn.btn--blue a:hover
 }
 .content_button
 {
-  margin-top:100px;
+    margin-top:100px;
 }
 .section-heading
 {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .text-muted
 {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 section.town
 {
-  background:#ececec;
-  padding-bottom: 60px;
+    background:#ececec;
+    padding-bottom: 60px;
 }
 button.btn.btn-primary.résa
 {
-  height: 60px;
-  font-size: 18px;
-  margin-top: 20px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 /*page reunion*/
 section.house
 {
-  background:#ececec;
-  padding-top:30px;
-  padding-bottom:30px;
+    background:#ececec;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 img.img_home
 {
-  height: 300px;
-  width: 700px;
+    height: 300px;
+    width: 700px;
 }
 .title_reunion
 {
-  font-weight: normal;
-  padding-bottom: 30px;
+    font-weight: normal;
+    padding-bottom: 30px;
 }
 #thumbnail_thumbnail
 {
-  height: 430px;
+    height: 430px;
 }
 .thumbnail .caption {
     padding: 9px;
@@ -370,33 +369,33 @@ img.img_home
 /*Page equipe*/
 h3.text_equipe
 {
-  font-weight: 300;
+    font-weight: 300;
 }
 h3.title_equipe
 {
-  font-weight: 300;
+    font-weight: 300;
 }
 /*Page galerie*/
 #galerie
 {
-  background: #eee;
-  padding-bottom: 120px;
+    background: #eee;
+    padding-bottom: 120px;
 
 }
 h3.title_desc_home
 {
-  color: black;
+    color: black;
 }
 h3.title_desc
 {
-  color: black;
-  font-weight: 300;
-  margin-right: 30px;
+    color: black;
+    font-weight: 300;
+    margin-right: 30px;
 }
 span.title_surface
 {
-  font-weight: 300;
-  font-size: 24px;
+    font-weight: 300;
+    font-size: 24px;
 }
 input
  {
@@ -406,19 +405,48 @@ input
 i.fa.fa-home
 {
 
-  font-size: 300px;
-  margin-bottom: 100px;
+    font-size: 300px;
+    margin-bottom: 100px;
 }
 
 /*reservation/new*/
 #content_reservation
 {
-  border: 3px solid #ccc;
-  border-radius: 2px ;
-  margin-top: 100px;
-  margin-bottom: 200px;
+    border: 3px solid #ccc;
+    border-radius: 2px ;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
-
+#zone_charges
+{
+    border: 3px solid #ccc;
+    border-radius: 2px ;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+}
+.container-fluid
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+h3.text_systeme
+{
+    font-size: 23px;
+    font-weight: normal;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+#zone_merci
+{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    font-size: 23px;
+    font-weight: normal;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
