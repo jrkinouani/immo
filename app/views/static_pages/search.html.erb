@@ -4,30 +4,29 @@
       <div class="text-center">
         <h3 class="title_reunion">
           <% if @logements.blank? %>
-            <h3 class="no_city">Désolé pas de logement sur <%= params[:search] %></br> à louer avec notre agence</h3>
-            <i class="fa fa-home" aria-hidden="true" ></i>
-            <% else %>
-              <h3 class="title_reunion">Voici toutes les maisons de <%= params[:search] %></h3>
-
+          <h3 class="no_city">Désolé pas de logement sur <%= params[:search] %></br> à louer avec notre agence</h3>
+           <i class="fa fa-home" aria-hidden="true" ></i>
+          <% else %>
+          <h3 class="title_reunion">Voici toutes les maisons de <%= params[:search] %></h3>
           <% end %>
-
+        </h3>
       </div>
     </div>
     <div class="row">
       <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
-              <div class="col-md-4 col-sm-4 hero-feature">
-                  <div class="thumbnail" id="thumbnail_thumbnail">
-                      <img src="<%= logement.image1.url %>" alt="" class="img_home">
-                      <div class="caption">
-                          <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
-                          <p>
-                              <h5 class="price"><%= logement.price %> € </h5>
-                              <%= link_to "Plus d'infos" ,  galerie_path(:id => logement.id)%>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-            <% end %>
+       <div class="col-md-4 col-sm-4 hero-feature">
+        <div class="thumbnail" id="thumbnail_thumbnail">
+         <img src="<%= logement.image1.url %>" alt="" class="img_home">
+          <div class="caption">
+           <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
+            <p>
+            <h5 class="price"><%= logement.price %> € </h5>
+            <%= link_to "Plus d'infos" ,  galerie_path(:id => logement.id)%>
+            </p>
+          </div>
+          </div>
+        </div>
+       <% end %>
       </div>
   </div>
 </section>

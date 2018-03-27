@@ -1,46 +1,46 @@
 <aside>
-      <div class="row">
-        <div class="text-center">
-          <h1 class="baseline">Vous allez être bien chez vous  </h1>
-          <!--<h4 class="accroche">DomtomImmo est une agence de location immobilière</h4>-->
-        </div>
-
-       <%= form_tag(search_path, method: "get", class: "search-discover js-form-search-location search-discover--hero", role: "form") do %>
-       <div class="search-discover__inner">
-         <%= text_field_tag :search, params[:search], class:"search-discover__input-location js-location", placeholder: "Dans quel ville voulez-vous louez ?" %>
-         <button type="submit" class="btn btn--success search-discover__submit" data-ga-category="Home" data-ga-action="Search">
-           <i class="fa fa-search visible-xs"></i>
-           <span class="hidden-xs">Rechercher</span>
-         </button>
-       </div>
-       <% end %>
-
-       <div class="row">
-         <div class="text-center">
-           <h4 class="text_who">Dom tom Immo est une agence de service à la personne,
-             <br>
-             axée sur la vente, la gestion et la location de biens immobiliers.
-          </h4>
-         </div>
-       </div>
-
-       <div class="row">
-         <div class="content_button">
-           <a href="#portfolio" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
-           </a>
-         </div>
-       </div>
+  <div class="row">
+    <div class="text-center">
+      <h1 class="baseline">Vous allez être bien chez vous  </h1>
+      <!--<h4 class="accroche">DomtomImmo est une agence de location immobilière</h4>-->
     </div>
+
+   <%= form_tag(search_path, method: "get", class: "search-discover js-form-search-location search-discover--hero", role: "form") do %>
+     <div class="search-discover__inner">
+       <%= text_field_tag :search, params[:search], class:"search-discover__input-location js-location", placeholder: "Dans quel ville voulez-vous louez ?" %>
+       <button type="submit" class="btn btn--success search-discover__submit" data-ga-category="Home" data-ga-action="Search">
+         <i class="fa fa-search visible-xs"></i>
+         <span class="hidden-xs">Rechercher</span>
+       </button>
+     </div>
+   <% end %>
+
+  <div class="row">
+    <div class="text-center">
+       <h4 class="text_who">Dom tom Immo est une agence de service à la personne,
+         <br>
+         axée sur la vente, la gestion et la location de biens immobiliers.
+      </h4>
+     </div>
+   </div>
+
+   <div class="row">
+    <div class="content_button">
+       <a href="#portfolio" class="btn btn-circle page-scroll">
+          <i class="fa fa-angle-double-down animated"></i>
+       </a>
+    </div>
+   </div>
+  </div>
 </aside>
 
 <article>
   <div id="portfolio" class="container">
     <div class="row">
       <div class="row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Nos locations</h2>
-          </div>
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Nos locations</h2>
+        </div>
       </div>
       <!--<div class="col-md-4 col-sm-6 portfolio-item">
         <div class="text-center"><h4>Location</h4></div>
@@ -151,16 +151,12 @@
   </section>-->
 
 
-
-
-
-
 <script>
-$('a[href^="#"]').click(function(){
-	var the_id = $(this).attr("href");
+  $('a[href^="#"]').click(function(){
+  	var the_id = $(this).attr("href");
 
-	$('html, body').animate({
-		scrollTop:$(the_id).offset().top
-	}, 'slow');
-	return false;});
+  	$('html, body').animate({
+  		scrollTop:$(the_id).offset().top
+  	}, 'slow');
+  	return false;});
 </script>

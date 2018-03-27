@@ -1,10 +1,9 @@
-
 <section id="galerie">
-<div class="row" id="test">
-    <div class="col-md-8  ">
-      <h3 class="title_desc_home"><%= @logement.desc.capitalize %> </h3>
-    </div>
-</div>
+ <div class="row" id="test">
+  <div class="col-md-8  ">
+    <h3 class="title_desc_home"><%= @logement.desc.capitalize %> </h3>
+  </div>
+ </div>
 
 <div class="row" >
  <div class="col-md-6">
@@ -20,7 +19,6 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
          <img src="<%= @logement.image1.url %>" alt="">
-
         <div class="carousel-caption">
         </div>
       </div>
@@ -28,38 +26,32 @@
       <div class="item">
        <img src="<%= @logement.image2.url %>" alt="">
         <div class="carousel-caption">
-
         </div>
       </div>
 
       <div class="item">
        <img src="<%= @logement.image3.url %>" alt="">
         <div class="carousel-caption">
-
         </div>
       </div>
 
       <div class="item">
        <img src="<%= @logement.image4.url %>" alt="">
         <div class="carousel-caption">
-
         </div>
       </div>
 
       <div class="item">
        <img src="<%= @logement.image5.url %>" alt="">
         <div class="carousel-caption">
-
         </div>
       </div>
 
       <div class="item">
        <img src="<%= @logement.image6.url %>" alt="">
         <div class="carousel-caption">
-
         </div>
       </div>
-
     </div>
 
     <!-- Controls -->
@@ -74,14 +66,14 @@
   </div>
 </div>
 
-<div class="col-md-4">
+  <div class="col-md-4">
     <label><h3>Description de l'appartement</h3></label>
     <h3 class="title_desc"><%= @logement.desc_home %> </h3>
     <label><h3>Surface : </h3></label> <span class="title_surface"><%= @logement.surface %> m2<span><br>
     <label><h3>Nbr de chambre : </h3></label> <span class="title_surface"><%= @logement.bedroom %> <span><br>
     <label><h3>Nbr de pièces : </h3></label> <span class="title_surface"><%= @logement.capacity %> <span>
     <h3 class="tel">Contactez nous au : 02 62 02 43 31</h3>
-</div>
+  </div>
  <!--<%= link_to 'Faire une réservation', new_reservation_path(logement_id: @logement.id), class: "btn btn-primary navbar-btn", id: "btn_car_show"%>-->
-</div>
+ </div>
 </section>
