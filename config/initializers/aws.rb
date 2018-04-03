@@ -9,7 +9,7 @@ CarrierWave.configure do |config|
 
   }
 
-  config.fog_directory  = 'domtomimmo'
+  config.fog_directory  = 'domtomimmowebsite'
   config.fog_public     = false
   config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
 end
