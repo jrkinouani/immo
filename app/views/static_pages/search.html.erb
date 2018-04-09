@@ -1,16 +1,16 @@
 <section class="house">
   <div class="container">
     <div class="row">
-      <div class="text-center">
-        <h3 class="title_reunion">
-          <% if @logements.blank? %>
-          <h3 class="no_city">Désolé pas de logement sur <%= params[:search] %></br> à louer avec notre agence</h3>
-           <i class="fa fa-home" aria-hidden="true" ></i>
-          <% else %>
-          <h3 class="title_reunion">Voici toutes les maisons de <%= params[:search] %></h3>
-          <% end %>
-        </h3>
-      </div>
+     <div class="text-center">
+      <h3 class="title_reunion">
+        <% if @logements.blank? %>
+        <h3 class="no_city">Désolé pas de logement sur <%= params[:search] %></br> à louer avec notre agence</h3>
+         <i class="fa fa-home" aria-hidden="true" ></i>
+        <% else %>
+        <h3 class="title_reunion">Voici toutes les maisons de <%= params[:search] %></h3>
+        <% end %>
+      </h3>
+     </div>
     </div>
     <div class="row">
       <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
