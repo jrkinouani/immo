@@ -9,11 +9,9 @@
    <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
     <div class="col-md-4 col-sm-4 hero-feature">
       <div class="thumbnail" id="thumbnail_thumbnail">
-                  <img src="<%= logement.image1.url %>" alt="" class="img_home">
+        <img src="<%= logement.image1.url %>" alt="" class="img_home">
         <div class="caption">
-         <h5 class="desc_home"><%= logement.city.capitalize %>,
-            <%= logement.desc_home %>
-          </h5>
+         <h5 class="desc_home"><%= logement.city.capitalize %>,<%= logement.desc_home %></h5>
           <p>
            <h5 class="price"><%= logement.price %> € </h5>
             <%= link_to "Plus d'infos" ,  galerie_path(:id => logement.id)%>
