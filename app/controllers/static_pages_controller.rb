@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
 
   def letsencrypt
     # use your code here, not mine
-     render text: "fyWFAPHCTz_g2Nzbqs5rmY6qr-8L6loNkhAQe81o8Gc"
+     render text: "Oqq-iH58u47abcoaWos9nOpk7yd_7WMZlegW5oCxRws"
   end
 
   def galerie
