@@ -19,6 +19,7 @@ Rails.application.routes.draw do
    get "/achat" => 'static_pages#achat'
    get "/gestion" => "static_pages#gestion"
    get "/search" => "static_pages#search"
+   get "/.well-known/acme-challenge/:id" => 'pages#letsencrypt'
 
 
   get "/we-work-we-wait.mp4", :to => redirect("/videos/we-work-we-wait.mp4")

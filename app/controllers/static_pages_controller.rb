@@ -6,6 +6,11 @@ class StaticPagesController < ApplicationController
   def apropos
   end
 
+  def letsencrypt
+    # use your code here, not mine
+     render text: "fyWFAPHCTz_g2Nzbqs5rmY6qr-8L6loNkhAQe81o8Gc"
+  end
+
   def galerie
       @logement = Logement.find(params[:id])
   end
