@@ -21,6 +21,8 @@ Rails.application.routes.draw do
    get "/search" => "static_pages#search"
    get "/.well-known/acme-challenge/:id" => 'pages#letsencrypt'
 
+   match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
